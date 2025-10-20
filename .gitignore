@@ -1,0 +1,9 @@
+*.swp
+Session.vim
+.netrwhist
+
+
+lua/**/base46_cache/
+base46/
+
+*.local.lua
