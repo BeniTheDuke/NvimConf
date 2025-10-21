@@ -19,7 +19,7 @@ vim.keymap.set("n", "<localleader>rr", ":MoltenReevaluateCell<CR>",
     { silent = true, desc = "re-evaluate cell" })
 vim.keymap.set("v", "<localleader>r", ":<C-u>MoltenEvaluateVisual<CR>gv",
     { silent = true, desc = "evaluate visual selection" })
-vim.keymap.set("n", "<localleader>oo", ":noautocmd MoltenEnterOutput<CR>", 
+vim.keymap.set("n", "<localleader>oo", ":noautocmd MoltenEnterOutput<CR>",
     { silent = true, desc = "Molten: enter output" })
 
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
