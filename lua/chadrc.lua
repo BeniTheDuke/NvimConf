@@ -15,18 +15,21 @@ M.base46 = {
 }
 
 vim.g.clipboard = {
-  name = 'WslClipboard',
-  copy = {
-    ['+'] = '/mnt/c/Windows/System32/clip.exe',
-    ['*'] = '/mnt/c/Windows/System32/clip.exe',
-  },
-  paste = {
-    ['+'] = '/mnt/c/Windows/System32/WindowsPowerShell/v1.0/powershell.exe -c [Console]::Out.Write($(Get-Clipboard -Raw).tostring().replace("`r", ""))',
-    ['*'] = '/mnt/c/Windows/System32/WindowsPowerShell/v1.0/powershell.exe -c [Console]::Out.Write($(Get-Clipboard -Raw).tostring().replace("`r", ""))',
-  },
-  cache_enabled = 0,
+    name = 'WslClipboard',
+    copy = {
+        ["+"] = { "bash", "-lc", "iconv -f utf-8 -t utf-16le | /mnt/c/Windows/System32/clip.exe" },
+        ["*"] = { "bash", "-lc", "iconv -f utf-8 -t utf-16le | /mnt/c/Windows/System32/clip.exe" },
+      },
+    paste = {
+        ["+"] = { "bash", "-lc",
+          "powershell.exe -NoProfile -Command '$OutputEncoding = [Console]::OutputEncoding = [System.Text.Encoding]::UTF8; [Console]::Write((Get-Clipboard -Raw).Replace(\"`r\",\"\"))'"
+        },
+        ["*"] = { "bash", "-lc",
+          "powershell.exe -NoProfile -Command '$OutputEncoding = [Console]::OutputEncoding = [System.Text.Encoding]::UTF8; [Console]::Write((Get-Clipboard -Raw).Replace(\"`r\",\"\"))'"
+        },
+      },
+    cache_enabled = 0,
 }
-
 
 -- M.nvdash = { load_on_startup = true }
 -- M.ui = {
