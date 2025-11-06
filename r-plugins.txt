@@ -18,3 +18,20 @@ multcomp
 nlme
 palmerpenguins
 sciplot
+
+
+
+# Dependencies to install on ubuntu with apt:
+
+r-base-dev
+libgmp-dev
+tcl 
+tk 
+bwidget
+
+
+## Troubleshooting
+### asbio:
+options(repos = c(CRAN = "https://cloud.r-project.org"))
+install.packages("asbio", dependencies = TRUE)
+
