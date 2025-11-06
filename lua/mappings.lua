@@ -21,5 +21,7 @@ vim.keymap.set("v", "<localleader>r", ":<C-u>MoltenEvaluateVisual<CR>gv",
     { silent = true, desc = "evaluate visual selection" })
 vim.keymap.set("n", "<localleader>oo", ":noautocmd MoltenEnterOutput<CR>",
     { silent = true, desc = "Molten: enter output" })
+vim.keymap.set("n", "<localleader>mi", ":noautocmd MoltenImagePopup<CR>",
+    { silent = true, desc = "Molten: enter output" })
 
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
