@@ -13,11 +13,6 @@ return {
     end,
   },
 
-  -- {
-  --   "R-nvim/R.nvim",
-  --   lazy = false,
-  -- },
-
   {
     "rmagatti/auto-session",
     lazy = false,
@@ -65,21 +60,7 @@ return {
 
   {
     "GCBallesteros/jupytext.nvim",
-    config = false,
+    config = true,
     lazy = false,
   },
-
-
-  -- test new blink
-  -- { import = "nvchad.blink.lazyspec" },
-
-  -- {
-  -- 	"nvim-treesitter/nvim-treesitter",
-  -- 	opts = {
-  -- 		ensure_installed = {
-  -- 			"vim", "lua", "vimdoc",
-  --      "html", "css"
-  -- 		},
-  -- 	},
-  -- },
 }
