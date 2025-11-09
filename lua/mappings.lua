@@ -24,4 +24,35 @@ vim.keymap.set("n", "<localleader>oo", ":noautocmd MoltenEnterOutput<CR>",
 vim.keymap.set("n", "<localleader>mi", ":noautocmd MoltenImagePopup<CR>",
     { silent = true, desc = "Molten: enter output" })
 
+
+-- Diffview
+vim.keymap.set("n", "<leader>do", ":DiffviewOpen<CR>",
+    { silent = true, desc = "Diffview: Open" })
+vim.keymap.set("n", "<leader>dc", ":DiffviewClose<CR>",
+    { silent = true, desc = "Diffview: Close" })
+
+
+-- NeoGit
+vim.keymap.set("n", "<leader>gg", ":Neogit<CR>",
+    { silent = true, desc = "Neogit" })
+vim.keymap.set("n", "<leader>gc", ":NeogitCommit<CR>",
+    { silent = true, desc = "Neogit COMMIT" })
+vim.keymap.set("n", "<leader>gp", ":Neogit pull<CR>",
+    { silent = true, desc = "Neogit PULL" })
+vim.keymap.set("n", "<leader>gP", ":Neogit push<CR>",
+    { silent = true, desc = "Neogit PUSH" })
+
+
+-- Telescope
+vim.keymap.set("n", "<leader>tgc", ":Telescope git_commits<CR>",
+    { silent = true, desc = "Git commits" })
+vim.keymap.set("n", "<leader>tgs", ":Telescope git_status<CR>",
+    { silent = true, desc = "Git status" })
+vim.keymap.set("n", "<leader>tgS", ":Telescope git_stash<CR>",
+    { silent = true, desc = "Git stash" })
+vim.keymap.set("n", "<leader>tgb", ":Telescope git_branches<CR>",
+    { silent = true, desc = "Git branches" })
+vim.keymap.set("n", "<leader>tk", ":Telescope keymaps<CR>",
+    { silent = true, desc = "keymaps" })
+
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")

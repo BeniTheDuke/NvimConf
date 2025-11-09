@@ -63,4 +63,15 @@ return {
     config = true,
     lazy = false,
   },
+
+  {
+    "NeogitOrg/neogit",
+    lazy = false,
+  },
+
+  {
+    "sindrets/diffview.nvim",
+    lazy = false,
+  },
+  
 }
