@@ -23,6 +23,11 @@ vim.lsp.config("r_language_server", {
   capabilities = nvlsp.capabilities,
 })
 
-vim.lsp.enable({"pyright", "ruff_lsp", "r_language_server"})
+vim.lsp.config("omnisharp", {
+  on_attach = nvlsp.on_attach,
+  capabilities = nvlsp.capabilities,
+})
+
+vim.lsp.enable({"pyright", "ruff_lsp", "r_language_server", "omnisharp"})
 
 -- read :h vim.lsp.config for changing options of lsp servers 
