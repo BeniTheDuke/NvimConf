@@ -1,0 +1,37 @@
+# Vim 
+
+## Jupyter/Molten
+Install using:
+  ~/.venvs/nvim/bin/python -m pip install -U PACKAGE_NAME
+
+  cairosvg
+  ipykernel
+  ipywidgets
+  jupyter_client
+  kaleido
+  nbformat
+  pillow
+  plotly
+  pnglatex
+  pynvim
+  pyperclip
+
+Jupytext needs to be installed "globally"
+  sudo apt update
+  sudo apt install -y pipx
+  pipx ensurepath    # adds ~/.local/bin to local PATH
+  # Open new shell or: source ~/.bashrc / ~/.zshrc
+
+  pipx install jupytext
+  which jupytext     # Should display something like ~/.local/bin/jupytext 
+  jupytext --version
+
+
+
+# School
+
+## Mathematical Modelling
+
+### Markov
+
+  pgmpy
