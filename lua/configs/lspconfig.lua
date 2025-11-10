@@ -5,6 +5,12 @@ nvlsp.defaults()
 vim.lsp.config("pyright", {
   on_attach = nvlsp.on_attach,
   capabilities = nvlsp.capabilities,
+  settings = {
+    python = {
+      venvPath = vim.env.HOME .. "/.venvs",
+      venv = "nvim"
+    }
+  }
 })
 
 vim.lsp.config("ruff_lsp", {
