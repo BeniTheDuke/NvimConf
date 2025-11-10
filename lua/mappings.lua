@@ -44,13 +44,13 @@ vim.keymap.set("n", "<leader>gP", ":Neogit push<CR>",
 
 
 -- Telescope
-vim.keymap.set("n", "<leader>tgc", ":Telescope git_commits<CR>",
+vim.keymap.set("n", "<leader>tc", ":Telescope git_commits<CR>",
     { silent = true, desc = "Git commits" })
-vim.keymap.set("n", "<leader>tgs", ":Telescope git_status<CR>",
+vim.keymap.set("n", "<leader>ts", ":Telescope git_status<CR>",
     { silent = true, desc = "Git status" })
-vim.keymap.set("n", "<leader>tgS", ":Telescope git_stash<CR>",
+vim.keymap.set("n", "<leader>tS", ":Telescope git_stash<CR>",
     { silent = true, desc = "Git stash" })
-vim.keymap.set("n", "<leader>tgb", ":Telescope git_branches<CR>",
+vim.keymap.set("n", "<leader>tb", ":Telescope git_branches<CR>",
     { silent = true, desc = "Git branches" })
 vim.keymap.set("n", "<leader>tk", ":Telescope keymaps<CR>",
     { silent = true, desc = "keymaps" })
