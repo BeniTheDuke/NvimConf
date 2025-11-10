@@ -55,4 +55,11 @@ vim.keymap.set("n", "<leader>tgb", ":Telescope git_branches<CR>",
 vim.keymap.set("n", "<leader>tk", ":Telescope keymaps<CR>",
     { silent = true, desc = "keymaps" })
 
+-- Change buffers with tab
+vim.keymap.set("n", "<Tab>", ":bnext<CR>", 
+    { silent = true, desc = "Next buffer" })
+vim.keymap.set("n", "<S-Tab>", ":bprevious<CR>", 
+    { silent = true, desc = "Previous buffer" })
+
+
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
