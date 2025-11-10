@@ -73,5 +73,14 @@ return {
     "sindrets/diffview.nvim",
     lazy = false,
   },
+
+  {
+    "nvim-tree/nvim-tree.lua",
+    opts = {
+      view = {
+        adaptive_size = true,
+      },
+    },
+  },
   
 }
