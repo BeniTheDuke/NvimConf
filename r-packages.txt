@@ -12,12 +12,14 @@ emmeans
 exactRankTests
 ggeffects
 ggplot2
+graphics
 lattice
 lmPerm
 lme4
 multcomp
 nlme
 palmerpenguins
+rgl
 sciplot
 
 
