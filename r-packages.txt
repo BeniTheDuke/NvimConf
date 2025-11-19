@@ -20,7 +20,9 @@ multcomp
 nlme
 palmerpenguins
 rgl
+rmarkdown
 sciplot
+vegan
 
 
 
@@ -31,6 +33,7 @@ libgmp-dev
 tcl 
 tk 
 bwidget
+pandoc
 
 
 ## Troubleshooting
