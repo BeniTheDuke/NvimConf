@@ -63,5 +63,15 @@ vim.keymap.set("n", "<Tab>", ":bnext<CR>",
 vim.keymap.set("n", "<S-Tab>", ":bprevious<CR>",
     { silent = true, desc = "Previous buffer" })
 
+-- tmux navigate --
+vim.keymap.set('n', "<C-l>", ":TmuxNavigateRight<CR>",
+    { silent = true, desc = "Navigate Right"})
+vim.keymap.set('n', "<C-h>", ":TmuxNavigateLeft<CR>",
+    { silent = true, desc = "Navigate Left"})
+vim.keymap.set('n', "<C-k>", ":TmuxNavigateUp<CR>",
+    { silent = true, desc = "Navigate Up"})
+vim.keymap.set('n', "<C-j>", ":TmuxNavigateDown<CR>",
+    { silent = true, desc = "Navigate Down"})
+
 
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
