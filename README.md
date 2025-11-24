@@ -1,9 +1,11 @@
-**This repo is supposed to be used as config by NvChad users!**
-
-- The main nvchad repo (NvChad/NvChad) is used as a plugin by this repo.
-- So you just import its modules , like `require "nvchad.options" , require "nvchad.mappings"`
-- So you can delete the .git from this repo ( when you clone it locally ) or fork it :)
-
-# Credits
-
-1) Lazyvim starter https://github.com/LazyVim/starter as nvchad's starter was inspired by Lazyvim's . It made a lot of things easier!
+# Requirements
+- [Neovim 0.11](https://github.com/neovim/neovim/releases/tag/stable)
+    - The neweste version often is not in the repo, so use: <br>
+        `sudo add-apt-repository ppa:neovim-ppa/stable` <br>
+        `sudo apt update` <br>
+        `sudo apt install neovim`
+- Packages:
+    - unzip
+    - build-essential (gcc)
+    - ripgrep
+    - luarocks
