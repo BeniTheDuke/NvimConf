@@ -14,22 +14,29 @@ M.base46 = {
 	-- },
 }
 
-vim.g.clipboard = {
-    name = 'WslClipboard',
-    copy = {
-        ["+"] = { "bash", "-lc", "iconv -f utf-8 -t utf-16le | /mnt/c/Windows/System32/clip.exe" },
-        ["*"] = { "bash", "-lc", "iconv -f utf-8 -t utf-16le | /mnt/c/Windows/System32/clip.exe" },
-      },
-    paste = {
-        ["+"] = { "bash", "-lc",
-          "powershell.exe -NoProfile -Command '$OutputEncoding = [Console]::OutputEncoding = [System.Text.Encoding]::UTF8; [Console]::Write((Get-Clipboard -Raw).Replace(\"`r\",\"\"))'"
+local function file_exists(path)
+  local stat = vim.loop.fs_stat(path)
+  return stat ~= nil
+end
+
+if file_exists("/mnt/c/Windows/System32/clip.exe") then
+  vim.g.clipboard = {
+      name = 'WslClipboard',
+      copy = {
+          ["+"] = { "bash", "-lc", "iconv -f utf-8 -t utf-16le | /mnt/c/Windows/System32/clip.exe" },
+          ["*"] = { "bash", "-lc", "iconv -f utf-8 -t utf-16le | /mnt/c/Windows/System32/clip.exe" },
         },
-        ["*"] = { "bash", "-lc",
-          "powershell.exe -NoProfile -Command '$OutputEncoding = [Console]::OutputEncoding = [System.Text.Encoding]::UTF8; [Console]::Write((Get-Clipboard -Raw).Replace(\"`r\",\"\"))'"
+      paste = {
+          ["+"] = { "bash", "-lc",
+            "powershell.exe -NoProfile -Command '$OutputEncoding = [Console]::OutputEncoding = [System.Text.Encoding]::UTF8; [Console]::Write((Get-Clipboard -Raw).Replace(\"`r\",\"\"))'"
+          },
+          ["*"] = { "bash", "-lc",
+            "powershell.exe -NoProfile -Command '$OutputEncoding = [Console]::OutputEncoding = [System.Text.Encoding]::UTF8; [Console]::Write((Get-Clipboard -Raw).Replace(\"`r\",\"\"))'"
+          },
         },
-      },
-    cache_enabled = 0,
-}
+      cache_enabled = 0,
+  }
+end
 
 -- M.nvdash = { load_on_startup = true }
 
