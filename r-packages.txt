@@ -5,6 +5,7 @@ agridat
 asbio
 boot
 car
+clValid
 coin
 corrplot
 dplyr
