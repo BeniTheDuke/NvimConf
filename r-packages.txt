@@ -17,6 +17,8 @@ graphics
 lattice
 lmPerm
 lme4
+lmerTest
+merTools
 multcomp
 nlme
 palmerpenguins
