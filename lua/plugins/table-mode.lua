@@ -1,4 +1,4 @@
 return {
     'dhruvasagar/vim-table-mode',
-    ft = {"markdown", "txt"},
+    ft = {"markdown", "txt", "rmd"},
 }

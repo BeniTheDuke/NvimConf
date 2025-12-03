@@ -2,7 +2,7 @@
 return {
   "AntonVanAssche/md-headers.nvim",
   version = "*",
-  ft = { "markdown" },
+  ft = { "markdown", "rmd"},
   dependencies = {
     "nvim-lua/plenary.nvim",
     "nvim-treesitter/nvim-treesitter",
