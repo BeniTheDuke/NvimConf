@@ -2,10 +2,9 @@ require "nvchad.options"
 
 -- add yours here!
 
--- local o = vim.o
--- o.cursorlineopt ='both' -- to enable cursorline!
+local o = vim.o
 
-vim.o.foldmethod = "expr"
-vim.o.foldexpr = "nvim_treesitter#foldexpr()"
-vim.o.foldenable = true
-
+o.foldmethod = "expr"
+o.foldexpr = "nvim_treesitter#foldexpr()"
+-- o.foldenable = true
+o.foldlevel = 99

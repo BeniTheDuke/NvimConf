@@ -73,5 +73,11 @@ vim.keymap.set('n', "<C-k>", ":TmuxNavigateUp<CR>",
 vim.keymap.set('n', "<C-j>", ":TmuxNavigateDown<CR>",
     { silent = true, desc = "Navigate Down"})
 
+-- MD headers --
+vim.keymap.set('n', "<leader>th", ":MDHeadersTelescope<CR>",
+    { silent = true, desc = "Markdown Headers Telescope"})
+vim.keymap.set('n', "<leader>mh", ":MDHeadersCurrent<CR>",
+    { silent = true, desc = "Markdown Headers"})
+
 
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
