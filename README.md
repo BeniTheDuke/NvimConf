@@ -14,6 +14,8 @@
 - build-essential (gcc)
 - ripgrep
 - luarocks
+- imagemagick 
+- libmagickwand-dev
 
 
 ## Treesitter
