@@ -10,12 +10,16 @@
 
 ## Packages
 
-- unzip
-- build-essential (gcc)
-- ripgrep
-- luarocks
-- imagemagick 
-- libmagickwand-dev
+- Essentials
+    - unzip
+    - build-essential (gcc)
+    - ripgrep
+    - luarocks
+    - imagemagick 
+    - libmagickwand-dev
+- LaTeX
+    - texlive-latex-extra
+    - texlive-xetex
 
 
 ## Treesitter

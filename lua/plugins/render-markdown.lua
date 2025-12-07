@@ -3,8 +3,8 @@ return {
     dependencies = { 'nvim-treesitter/nvim-treesitter', 'nvim-mini/mini.icons' },
     ---@module 'render-markdown'
     ---@type render.md.UserConfig
-    ft = {"markdown", "rmd"},
+    ft = {"markdown", "rmd", "quarto"},
     opts = {
-      file_types = { "markdown", "rmd" },
+      file_types = { "markdown", "rmd", "quarto", "qmd" },
     },
 }
