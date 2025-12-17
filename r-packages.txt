@@ -1,5 +1,6 @@
 MASS
 NSM3
+Rtsne
 agricolae
 agridat
 asbio
@@ -11,6 +12,7 @@ corrplot
 dplyr
 emmeans
 exactRankTests
+fossil
 ggeffects
 ggplot2
 graphics
