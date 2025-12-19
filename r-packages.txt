@@ -20,6 +20,7 @@ lattice
 lmPerm
 lme4
 lmerTest
+lmtest
 merTools
 multcomp
 nlme
